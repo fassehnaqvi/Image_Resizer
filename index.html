@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Resizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Image Resizer</h1>
+
+        <input type="file" id="upload" accept="image/*">
+
+        <input type="number" id="width" placeholder="Width">
+        <input type="number" id="height" placeholder="Height">
+
+        <button onclick="resizeImage()">Resize</button>
+
+        <br><br>
+
+        <canvas id="canvas"></canvas>
+
+        <br><br>
+
+        <a id="downloadBtn" style="display:none;">Download Image</a>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
